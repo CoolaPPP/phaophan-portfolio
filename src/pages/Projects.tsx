@@ -2,9 +2,9 @@ import Navbar from "@/components/Navbar";
 
 const Projects = () => {
   const featuredProject = {
-    title: "E-Commerce Platform",
+    title: "Independent Study Project",
     description: "A comprehensive e-commerce platform that revolutionizes online shopping experiences. This project was built from the ground up using modern web technologies, featuring a complete user authentication system, secure payment processing through Stripe integration, and a robust admin dashboard for inventory management. The platform supports real-time notifications, advanced product filtering, shopping cart persistence, and responsive design across all devices. My role involved architecting the entire frontend application, implementing state management solutions, and ensuring optimal performance through code splitting and lazy loading techniques.",
-    technologies: ["React", "TypeScript", "Node.js", "MongoDB", "Stripe API", "Redux Toolkit", "Tailwind CSS", "Socket.io"],
+    technologies: ["PHP", "Laravel", "Bootstrap", "JavaScript", "mySQL"],
     mainImage: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop",
     galleryImages: [
       {
@@ -41,6 +41,10 @@ const Projects = () => {
             </div>
           </div>
 
+          <div className="max-w-4xl mx-auto mb-12">
+            <h2 className="text-3xl font-bold text-espresso mb-6">Coffee Shop E-Commerce Project </h2>
+          </div>
+
           {/* Main Description */}
           <div className="max-w-4xl mx-auto mb-12">
             <h2 className="text-2xl font-bold text-espresso mb-6">Project Overview</h2>
@@ -51,7 +55,7 @@ const Projects = () => {
 
           {/* Technology Stack */}
           <div className="max-w-4xl mx-auto mb-16">
-            <h2 className="text-2xl font-bold text-espresso mb-6">Technology Stack</h2>
+            <h2 className="text-2xl font-bold text-espresso mb-6">Languages & Frameworks</h2>
             <div className="flex flex-wrap gap-3">
               {featuredProject.technologies.map((tech) => (
                 <span 

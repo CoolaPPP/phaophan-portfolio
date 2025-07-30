@@ -20,7 +20,7 @@ const Index = () => {
 
           {/* Main Heading */}
           <h1 className="text-4xl md:text-5xl font-bold text-espresso mb-6">
-            Alex Thompson
+            Phaophan Photham
           </h1>
 
           {/* Description */}
@@ -33,7 +33,7 @@ const Index = () => {
             to="/about" 
             className="bg-sage text-ivory px-8 py-3 rounded-lg font-semibold hover:bg-olive transition-colors inline-flex items-center gap-2"
           >
-            Learn More About Me <ArrowRight className="h-5 w-5" />
+            เกี่ยวกับฉัน <ArrowRight className="h-5 w-5" />
           </Link>
         </div>
       </div>
