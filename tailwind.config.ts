@@ -22,6 +22,10 @@ export default {
 				'k2d': ['K2D', 'sans-serif'],
 			},
 			colors: {
+				'ivory': '#E9E5D6',
+				'sage': '#ACB992',
+				'olive': '#464E2E',
+				'espresso': '#362706',
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',

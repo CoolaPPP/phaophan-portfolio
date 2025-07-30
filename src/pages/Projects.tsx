@@ -1,115 +1,91 @@
-import { useState } from "react";
 import Navbar from "@/components/Navbar";
-import ProjectCard from "@/components/ProjectCard";
-import Modal from "@/components/Modal";
-
-interface Project {
-  id: number;
-  title: string;
-  image: string;
-  description: string;
-  technologies: string[];
-}
 
 const Projects = () => {
-  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
-
-  const projects: Project[] = [
-    {
-      id: 1,
-      title: "E-Commerce Platform",
-      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=500&h=300&fit=crop",
-      description: "A full-featured e-commerce platform built with React and Node.js, featuring user authentication, payment processing, and admin dashboard.",
-      technologies: ["React", "Node.js", "MongoDB", "Stripe", "TypeScript"]
-    },
-    {
-      id: 2,
-      title: "Task Management App",
-      image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=500&h=300&fit=crop",
-      description: "A collaborative task management application with real-time updates, team collaboration features, and project tracking.",
-      technologies: ["Vue.js", "Firebase", "Tailwind CSS", "Socket.io"]
-    },
-    {
-      id: 3,
-      title: "Portfolio Website",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&h=300&fit=crop",
-      description: "A responsive portfolio website showcasing projects and skills, built with modern web technologies and optimized for performance.",
-      technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"]
-    },
-    {
-      id: 4,
-      title: "Weather Dashboard",
-      image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=500&h=300&fit=crop",
-      description: "A weather dashboard that provides detailed weather information with beautiful visualizations and location-based forecasts.",
-      technologies: ["React", "Chart.js", "OpenWeather API", "CSS Grid"]
-    },
-    {
-      id: 5,
-      title: "Social Media Analytics",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&h=300&fit=crop",
-      description: "An analytics dashboard for social media metrics with data visualization, trend analysis, and reporting features.",
-      technologies: ["Python", "Django", "D3.js", "PostgreSQL", "Redis"]
-    },
-    {
-      id: 6,
-      title: "Recipe Sharing App",
-      image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=500&h=300&fit=crop",
-      description: "A recipe sharing platform where users can discover, save, and share their favorite recipes with a community of food enthusiasts.",
-      technologies: ["React Native", "Firebase", "Redux", "Expo"]
-    }
-  ];
+  const featuredProject = {
+    title: "E-Commerce Platform",
+    description: "A comprehensive e-commerce platform that revolutionizes online shopping experiences. This project was built from the ground up using modern web technologies, featuring a complete user authentication system, secure payment processing through Stripe integration, and a robust admin dashboard for inventory management. The platform supports real-time notifications, advanced product filtering, shopping cart persistence, and responsive design across all devices. My role involved architecting the entire frontend application, implementing state management solutions, and ensuring optimal performance through code splitting and lazy loading techniques.",
+    technologies: ["React", "TypeScript", "Node.js", "MongoDB", "Stripe API", "Redux Toolkit", "Tailwind CSS", "Socket.io"],
+    mainImage: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop",
+    galleryImages: [
+      {
+        url: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=600&h=400&fit=crop",
+        caption: "Clean and intuitive product listing page with advanced filtering options"
+      },
+      {
+        url: "https://images.unsplash.com/photo-1556742111-a301076d9d18?w=600&h=400&fit=crop",
+        caption: "Streamlined checkout process with multiple payment options"
+      },
+      {
+        url: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop",
+        caption: "Comprehensive admin dashboard for inventory and order management"
+      }
+    ]
+  };
 
   return (
     <>
       <Navbar />
-      <div className="min-h-screen bg-background">
+      <div className="min-h-screen bg-ivory">
         <div className="container mx-auto px-4 py-12">
-          <h1 className="text-4xl font-bold text-center mb-12 text-foreground">My Projects</h1>
+          {/* Project Title */}
+          <h1 className="text-5xl font-bold text-center mb-8 text-espresso">{featuredProject.title}</h1>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {projects.map((project) => (
-              <ProjectCard
-                key={project.id}
-                project={project}
-                onClick={setSelectedProject}
-              />
-            ))}
-          </div>
-        </div>
-      </div>
-
-      <Modal 
-        isOpen={!!selectedProject} 
-        onClose={() => setSelectedProject(null)}
-      >
-        {selectedProject && (
-          <div className="p-8">
-            <div className="aspect-video bg-secondary rounded-lg mb-6 overflow-hidden">
+          {/* Main Project Image */}
+          <div className="mb-12">
+            <div className="aspect-video rounded-lg overflow-hidden shadow-lg">
               <img 
-                src={selectedProject.image} 
-                alt={selectedProject.title}
+                src={featuredProject.mainImage} 
+                alt={featuredProject.title}
                 className="w-full h-full object-cover"
               />
             </div>
-            <h2 className="text-3xl font-bold text-card-foreground mb-4">{selectedProject.title}</h2>
-            <p className="text-muted-foreground leading-relaxed mb-6">{selectedProject.description}</p>
-            
-            <div>
-              <h3 className="text-lg font-semibold text-card-foreground mb-3">Technologies Used:</h3>
-              <div className="flex flex-wrap gap-2">
-                {selectedProject.technologies.map((tech) => (
-                  <span 
-                    key={tech}
-                    className="bg-primary text-primary-foreground px-3 py-1 rounded-full text-sm font-medium"
-                  >
-                    {tech}
-                  </span>
-                ))}
-              </div>
+          </div>
+
+          {/* Main Description */}
+          <div className="max-w-4xl mx-auto mb-12">
+            <h2 className="text-2xl font-bold text-espresso mb-6">Project Overview</h2>
+            <p className="text-olive leading-relaxed text-lg">
+              {featuredProject.description}
+            </p>
+          </div>
+
+          {/* Technology Stack */}
+          <div className="max-w-4xl mx-auto mb-16">
+            <h2 className="text-2xl font-bold text-espresso mb-6">Technology Stack</h2>
+            <div className="flex flex-wrap gap-3">
+              {featuredProject.technologies.map((tech) => (
+                <span 
+                  key={tech}
+                  className="bg-sage text-ivory px-4 py-2 rounded-full font-medium hover:bg-olive transition-colors"
+                >
+                  {tech}
+                </span>
+              ))}
             </div>
           </div>
-        )}
-      </Modal>
+
+          {/* Image Gallery */}
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-2xl font-bold text-espresso mb-8 text-center">Project Gallery</h2>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {featuredProject.galleryImages.map((image, index) => (
+                <div key={index} className="space-y-4">
+                  <div className="aspect-video rounded-lg overflow-hidden shadow-md">
+                    <img 
+                      src={image.url} 
+                      alt={`${featuredProject.title} - ${image.caption}`}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <p className="text-olive text-sm leading-relaxed">
+                    {image.caption}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
     </>
   );
 };
