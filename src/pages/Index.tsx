@@ -20,18 +20,18 @@ const Index = () => {
 
           {/* Main Heading */}
           <h1 className="text-4xl md:text-5xl font-bold text-espresso mb-6">
-            Phaophan Photham
+            เผ่าพันธ์ โพธิ์ธรรม
           </h1>
 
           {/* Description */}
           <p className="text-xl text-olive mb-8 leading-relaxed">
-            A passionate front-end developer creating beautiful and intuitive web experiences.
+            นักศึกษาสาขาเทคโนโลยีสารสนเทศ มีความสนใจในด้าน Software Developer และ Software Tester
           </p>
 
           {/* CTA Button */}
           <Link 
             to="/about" 
-            className="bg-sage text-ivory px-8 py-3 rounded-lg font-semibold hover:bg-olive transition-colors inline-flex items-center gap-2"
+            className="bg-sage text-olive px-8 py-3 rounded-lg font-semibold  hover:bg-olive hover:text-sage transition-colors inline-flex items-center gap-2"
           >
             เกี่ยวกับฉัน <ArrowRight className="h-5 w-5" />
           </Link>

@@ -29,26 +29,25 @@ const About = () => {
                 <div>
                   <h2 className="text-2xl font-bold text-espresso mb-4">เผ่าพันธ์ โพธิ์ธรรม</h2>
                   <p className="text-olive leading-relaxed">
-                    I'm a passionate full-stack developer with over 5 years of experience creating 
-                    innovative web applications and digital solutions. I specialize in modern web 
-                    technologies and love bringing creative ideas to life through clean, efficient code.
+                      ผมเป็นนักศึกษาสาขาเทคโนโลยีสารสนเทศ มีความสามารถในการพัฒนาเว็บไซต์ ด้วยใช้ TypeScript (Next.js) / PHP (Laravel)
+                      สามารถพัฒนาแอปพลิเคชันด้วย Flutter และยังสามารถทำ Test Case / Test Scenario 
+                      โดยมีประสบการณ์จากการเรียน การทำโครงงานการศึกษาอิสระ รวมไปถึงการอบรมเชิงปฏิบัติจากหน่วยงานภายในและภายนอกมหาวิทยาลัย
                   </p>
                 </div>
 
                 <div>
                   <p className="text-olive leading-relaxed">
-                    My journey in web development started with curiosity about how websites work, 
-                    and it has evolved into a career focused on creating user-centric applications 
-                    that solve real-world problems. I enjoy working with teams to deliver high-quality 
-                    software that makes a difference.
+                    ผมมีความสนใจในการพัฒนาเว็บไซต์และแอปพลิเคชันที่ใช้งานง่ายและมีประสิทธิภาพ 
+                    เว็บไซต์หรือแอปพลิเคชันนั้น ๆ จะต้องมีความสมบูรณ์ ปลอดภัย ซึ่งจะต้องมาจากการวางแผนและออกแบบที่ดี 
+                    มีการตรวจสอบและทดสอบอย่างละเอียด
+                    ผมยังมีความมุ่งมั่นที่จะเรียนรู้เทคโนโลยีใหม่ ๆ และพัฒนาทักษะของตัวเองอย่างต่อเนื่อง 
                   </p>
                 </div>
 
                 <div>
                   <p className="text-olive leading-relaxed">
-                    When I'm not coding, you can find me exploring new technologies, contributing to 
-                    open-source projects, or sharing knowledge with the developer community through 
-                    blog posts and mentoring.
+                    เป้าหมายของผมคือการพัฒนาความรู้และทักษะผ่านการลงมือปฏิบัติงานจริง และนำความสามารถไปใช้สร้างประโยชน์ให้แก่องค์กร
+                    ด้วยทักษะการทำงานเป็นทีม ความกระตือรือร้น และความคิดสร้างสรรค์
                   </p>
                 </div>
               </div>
@@ -68,37 +67,38 @@ const About = () => {
 
             {/* Location Section */}
             <div className="mt-16">
-              <h2 className="text-3xl font-bold text-center mb-8 text-espresso">Location</h2>
+              <h2 className="text-3xl font-bold text-center mb-8 text-espresso">ที่อยู่ปัจจุบัน</h2>
               <div className="flex items-center justify-center gap-3">
                 <svg className="w-6 h-6 text-olive" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
                 </svg>
-                <p className="text-olive text-lg font-medium">Chiang Mai, Thailand</p>
+                <p className="text-olive text-lg font-medium">อำเภอสันทราย จังหวัดเชียงใหม่</p>
               </div>
             </div>
 
             {/* Education Section */}
             <div className="mt-16">
-              <h2 className="text-3xl font-bold text-center mb-8 text-espresso">Education</h2>
+              <h2 className="text-3xl font-bold text-center mb-8 text-espresso">ประวัติการศึกษา</h2>
               <div className="max-w-2xl mx-auto space-y-6">
                 <div className="bg-sage/20 rounded-lg p-6 shadow-md">
-                  <h3 className="text-xl font-bold text-espresso mb-2">Computer Science</h3>
-                  <p className="text-olive font-medium">Chiang Mai University</p>
-                  <p className="text-olive/70">2020 - 2024</p>
+                  <h3 className="text-xl font-bold text-espresso mb-2">ระดับปริญญาตรี</h3>
+                  <p className="text-olive text-lg font-bold">คณะวิทยาศาสตร์และเทคโนโลยี สาขาเทคโนโลยีสารสนเทศ</p>
+                  <p className="text-olive font-medium">มหาวิทยาลัยราชภัฏเชียงใหม่</p>
+                  <p className="text-olive/70">2565 - ปัจจุบัน</p>
                 </div>
                 <div className="bg-sage/20 rounded-lg p-6 shadow-md">
-                  <h3 className="text-xl font-bold text-espresso mb-2">High School Diploma</h3>
-                  <p className="text-olive font-medium">Chiang Mai High School</p>
-                  <p className="text-olive/70">2016 - 2019</p>
+                  <h3 className="text-xl font-bold text-espresso mb-2">ระดับมัธยมศึกษาตอนปลาย</h3>
+                  <p className="text-olive font-medium">โรงเรียนถ้ำปินวิทยาคม</p>
+                  <p className="text-olive/70">2559 - 2562</p>
                 </div>
               </div>
             </div>
 
             {/* Interests Section */}
             <div className="mt-16">
-              <h2 className="text-3xl font-bold text-center mb-8 text-espresso">Interests</h2>
+              <h2 className="text-3xl font-bold text-center mb-8 text-espresso">สิ่งที่สนใจ</h2>
               <div className="flex flex-wrap justify-center gap-3 max-w-2xl mx-auto">
-                {["Photography", "Minimalist Design", "Specialty Coffee", "Reading Sci-Fi Novels", "Hiking"].map((interest) => (
+                {["Games", "IoT", "Specialty Coffee", "Animation", "Generative AI"].map((interest) => (
                   <span key={interest} className="bg-olive text-ivory px-4 py-2 rounded-full text-sm font-medium">
                     {interest}
                   </span>

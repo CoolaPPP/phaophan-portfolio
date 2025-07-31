@@ -2,8 +2,8 @@ import Navbar from "@/components/Navbar";
 
 const Projects = () => {
   const featuredProject = {
-    title: "Independent Study Project",
-    description: "A comprehensive e-commerce platform that revolutionizes online shopping experiences. This project was built from the ground up using modern web technologies, featuring a complete user authentication system, secure payment processing through Stripe integration, and a robust admin dashboard for inventory management. The platform supports real-time notifications, advanced product filtering, shopping cart persistence, and responsive design across all devices. My role involved architecting the entire frontend application, implementing state management solutions, and ensuring optimal performance through code splitting and lazy loading techniques.",
+    title: "โครงงานการศึกษาอิสระ",
+    description: "เว็บไซต์สำหรับการขายกาแฟที่ครอบคลุมการทำงานทั้งการขายและการจัดการสินค้า โดยโครงงานนี้ถูกจัดทำขึ้นจากการออกแบบ Responsive website พัฒนาเว็บไซต์ด้วยภาษา PHP (ใช้ Laravel เป็น Framework), JavaScript ใช้ Bootstrap และใช้ mySQL Database เว็บไซต์นี้รองรับการขายสินค้าที่เป็นกาแฟ และสินค้าอื่น ๆ ได้ สามารถเรียกดูสินค้า โดยแยกตามประเภทของสินค้าได้ รองรับการใช้โปรโมชันเป็นส่วนลดในการซื้อสินค้า รองรับการชำระเงิน รวมไปถึงการยกเลิกการสั่งซื้อสินค้า และเว็บไซต์ยังมีฝั่งหลังบ้าน เพื่อไว้ใช้สำหรับเพิ่มหรือแก้ไขข้อมูลต่าง ๆ ได้ เรียกดูข้อมูลและรายงานการขายได้",
     technologies: ["PHP", "Laravel", "Bootstrap", "JavaScript", "mySQL"],
     mainImage: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop",
     galleryImages: [
@@ -47,7 +47,7 @@ const Projects = () => {
 
           {/* Main Description */}
           <div className="max-w-4xl mx-auto mb-12">
-            <h2 className="text-2xl font-bold text-espresso mb-6">Project Overview</h2>
+            <h2 className="text-2xl font-bold text-espresso mb-6">รายละเอียดของโครงงาน</h2>
             <p className="text-olive leading-relaxed text-lg">
               {featuredProject.description}
             </p>
