@@ -66,9 +66,49 @@ const About = () => {
               </div>
             </div>
 
+            {/* Location Section */}
+            <div className="mt-16">
+              <h2 className="text-3xl font-bold text-center mb-8 text-espresso">Location</h2>
+              <div className="flex items-center justify-center gap-3">
+                <svg className="w-6 h-6 text-olive" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                </svg>
+                <p className="text-olive text-lg font-medium">Chiang Mai, Thailand</p>
+              </div>
+            </div>
+
+            {/* Education Section */}
+            <div className="mt-16">
+              <h2 className="text-3xl font-bold text-center mb-8 text-espresso">Education</h2>
+              <div className="max-w-2xl mx-auto space-y-6">
+                <div className="bg-sage/20 rounded-lg p-6 shadow-md">
+                  <h3 className="text-xl font-bold text-espresso mb-2">Computer Science</h3>
+                  <p className="text-olive font-medium">Chiang Mai University</p>
+                  <p className="text-olive/70">2020 - 2024</p>
+                </div>
+                <div className="bg-sage/20 rounded-lg p-6 shadow-md">
+                  <h3 className="text-xl font-bold text-espresso mb-2">High School Diploma</h3>
+                  <p className="text-olive font-medium">Chiang Mai High School</p>
+                  <p className="text-olive/70">2016 - 2019</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Interests Section */}
+            <div className="mt-16">
+              <h2 className="text-3xl font-bold text-center mb-8 text-espresso">Interests</h2>
+              <div className="flex flex-wrap justify-center gap-3 max-w-2xl mx-auto">
+                {["Photography", "Minimalist Design", "Specialty Coffee", "Reading Sci-Fi Novels", "Hiking"].map((interest) => (
+                  <span key={interest} className="bg-olive text-ivory px-4 py-2 rounded-full text-sm font-medium">
+                    {interest}
+                  </span>
+                ))}
+              </div>
+            </div>
+
             {/* Contact & Socials Section */}
             <div className="mt-16">
-              <h2 className="text-3xl font-bold text-center mb-8 text-espresso">Contact </h2>
+              <h2 className="text-3xl font-bold text-center mb-8 text-espresso">Contact</h2>
               <div className="flex flex-wrap justify-center gap-6">
                 <a 
                   href="https://github.com/CoolaPPP" 

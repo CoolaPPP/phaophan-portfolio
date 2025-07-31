@@ -69,9 +69,9 @@ const Certificates = () => {
   return (
     <>
       <Navbar />
-      <div className="min-h-screen bg-background">
+      <div className="min-h-screen bg-ivory">
         <div className="container mx-auto px-4 py-12">
-          <h1 className="text-4xl font-bold text-center mb-12 text-foreground">My Certificates</h1>
+          <h1 className="text-4xl font-bold text-center mb-12 text-espresso">My Certificates</h1>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {certificates.map((certificate) => (
@@ -91,19 +91,19 @@ const Certificates = () => {
       >
         {selectedCertificate && (
           <div className="p-8">
-            <div className="aspect-[4/3] bg-secondary rounded-lg mb-6 overflow-hidden">
+            <div className="aspect-[4/3] bg-sage/10 rounded-lg mb-6 overflow-hidden">
               <img 
                 src={selectedCertificate.image} 
                 alt={selectedCertificate.name}
                 className="w-full h-full object-cover"
               />
             </div>
-            <h2 className="text-3xl font-bold text-card-foreground mb-4">{selectedCertificate.name}</h2>
+            <h2 className="text-3xl font-bold text-espresso mb-4">{selectedCertificate.name}</h2>
             <div className="mb-4">
-              <p className="text-primary font-semibold text-lg">{selectedCertificate.issuer}</p>
-              <p className="text-muted-foreground">{selectedCertificate.date}</p>
+              <p className="text-olive font-semibold text-lg">{selectedCertificate.issuer}</p>
+              <p className="text-olive/70">{selectedCertificate.date}</p>
             </div>
-            <p className="text-muted-foreground leading-relaxed">{selectedCertificate.description}</p>
+            <p className="text-olive leading-relaxed">{selectedCertificate.description}</p>
           </div>
         )}
       </Modal>

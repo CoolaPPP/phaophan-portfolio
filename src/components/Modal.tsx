@@ -24,18 +24,18 @@ const Modal = ({ isOpen, onClose, children }: ModalProps) => {
 
   return (
     <div 
-      className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm"
+      className="fixed inset-0 z-50 flex items-center justify-center bg-espresso/75 backdrop-blur-sm"
       onClick={onClose}
     >
       <div 
-        className="bg-card rounded-lg shadow-2xl max-w-4xl max-h-[90vh] overflow-y-auto m-4 relative"
+        className="bg-white rounded-lg shadow-2xl max-w-4xl max-h-[90vh] overflow-y-auto m-4 relative"
         onClick={(e) => e.stopPropagation()}
       >
         <button
           onClick={onClose}
-          className="absolute top-4 right-4 z-10 bg-background/80 hover:bg-background rounded-full p-2 transition-colors"
+          className="absolute top-4 right-4 z-10 bg-sage/20 hover:bg-sage/40 rounded-full p-2 transition-colors"
         >
-          <X className="h-5 w-5 text-foreground" />
+          <X className="h-5 w-5 text-espresso" />
         </button>
         {children}
       </div>
