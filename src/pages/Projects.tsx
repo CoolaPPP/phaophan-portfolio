@@ -5,19 +5,19 @@ const Projects = () => {
     title: "โครงงานการศึกษาอิสระ",
     description: "เว็บไซต์สำหรับการขายกาแฟที่ครอบคลุมการทำงานทั้งการขายและการจัดการสินค้า โดยโครงงานนี้ถูกจัดทำขึ้นจากการออกแบบ Responsive website พัฒนาเว็บไซต์ด้วยภาษา PHP (ใช้ Laravel เป็น Framework), JavaScript ใช้ Bootstrap และใช้ mySQL Database เว็บไซต์นี้รองรับการขายสินค้าที่เป็นกาแฟ และสินค้าอื่น ๆ ได้ สามารถเรียกดูสินค้า โดยแยกตามประเภทของสินค้าได้ รองรับการใช้โปรโมชันเป็นส่วนลดในการซื้อสินค้า รองรับการชำระเงิน รวมไปถึงการยกเลิกการสั่งซื้อสินค้า และเว็บไซต์ยังมีฝั่งหลังบ้าน เพื่อไว้ใช้สำหรับเพิ่มหรือแก้ไขข้อมูลต่าง ๆ ได้ เรียกดูข้อมูลและรายงานการขายได้",
     technologies: ["PHP", "Laravel", "Bootstrap", "JavaScript", "mySQL"],
-    mainImage: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop",
+    mainImage: "/images/1987-main.png",
     galleryImages: [
       {
-        url: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=600&h=400&fit=crop",
-        caption: "Clean and intuitive product listing page with advanced filtering options"
+        url: "/images/1987-shop.png",
+        caption: "หน้าสำหรับแสดงสินค้า ที่มีการจัดเรียงตามประเภทของสินค้า"
       },
       {
-        url: "https://images.unsplash.com/photo-1556742111-a301076d9d18?w=600&h=400&fit=crop",
-        caption: "Streamlined checkout process with multiple payment options"
+        url: "/images/1987-dashboard.png",
+        caption: "หลังบ้านสำหรับจัดการสินค้าและดูรายงานการขาย"
       },
       {
-        url: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop",
-        caption: "Comprehensive admin dashboard for inventory and order management"
+        url: "/images/1987-admin.png",
+        caption: "การจัดการข้อมูลสินค้าและการสั่งซื้อ"
       }
     ]
   };
@@ -70,7 +70,7 @@ const Projects = () => {
 
           {/* Image Gallery */}
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-2xl font-bold text-espresso mb-8 text-center">Project Gallery</h2>
+            <h2 className="text-2xl font-bold text-espresso mb-8 text-center"></h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {featuredProject.galleryImages.map((image, index) => (
                 <div key={index} className="space-y-4">

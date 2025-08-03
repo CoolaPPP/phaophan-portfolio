@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 
+
 const About = () => {
   const skills = [
     "TypeScript", "Next.js", "PHP", "Laravel", "Bootstrap", "Tailwind CSS",
@@ -17,9 +18,15 @@ const About = () => {
             <div className="grid md:grid-cols-2 gap-12 items-start">
               {/* Profile Picture */}
               <div className="flex justify-center">
-                <div className="w-64 h-64 bg-sage rounded-full flex items-center justify-center">
-                  <div className="w-48 h-48 bg-olive rounded-full flex items-center justify-center">
-                    <span className="text-4xl text-ivory">👨‍💻</span>
+                <div className="w-auto h-auto bg-sage rounded-2xl flex items-center justify-center">
+                  <div className="w-auto h-auto bg-olive rounded-2xl flex items-center justify-center overflow-hidden">
+                    <img
+                      src="/images/profile.jpg" 
+                      alt="Profile"
+                      width={240}
+                      height={240}
+                      className="object-cover w-full h-full"
+                    />
                   </div>
                 </div>
               </div>

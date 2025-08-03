@@ -18,51 +18,51 @@ const Certificates = () => {
   const certificates: Certificate[] = [
     {
       id: 1,
-      name: "AWS Certified Developer",
-      image: "https://images.unsplash.com/photo-1606761568499-6d2451b23c66?w=400&h=300&fit=crop",
-      description: "This certification validates expertise in developing and maintaining applications on the Amazon Web Services platform.",
-      issuer: "Amazon Web Services",
-      date: "March 2024"
+      name: "การอบรมเชิงปฏิบัติการ เรื่อง การพัฒนา Web Application ด้วย Next.js  Framework และ mySQL",
+      image : "/images/cer1.png",
+      description: "การอบรมเชิงปฏิบัติการเกี่ยวกับการพัฒนา Web Application ด้วย Next.js Framework และ mySQL Database ที่ครอบคลุมการสร้างแอปพลิเคชันที่มีประสิทธิภาพและปลอดภัย มีการตกแต่ง UI ด้วย Tailwind CSS และ Deploy Website ผ่าน Vercel", 
+      issuer: "มหาวิทยาลัยราชภัฏเชียงใหม่",
+      date: "มีนาคม 2568"
     },
     {
       id: 2,
-      name: "React Professional Certificate",
-      image: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=400&h=300&fit=crop",
-      description: "Advanced certification demonstrating proficiency in React development, including hooks, context, and performance optimization.",
-      issuer: "Meta",
-      date: "January 2024"
+      name: "การอบรมเชิงปฏิบัติการ เรื่อง การพัฒนา Application ด้วย Flutter และ Firebase",
+      image: "/images/cer2.png",
+      description: "การอบรมเชิงปฏิบัติการเกี่ยวกับการพัฒนา Application ด้วย Flutter และ Firebase เพื่อสร้างแอปพลิเคชันให้มีประสิทธิภาพ และมีความสวยงาม ง่ายต่อการใช้งาน",
+      issuer: "มหาวิทยาลัยราชภัฏเชียงใหม่",
+      date: "มีนาคม 2568"
     },
     {
       id: 3,
-      name: "TypeScript Fundamentals",
-      image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=400&h=300&fit=crop",
-      description: "Comprehensive certification covering TypeScript fundamentals, advanced types, and best practices for large-scale applications.",
-      issuer: "Microsoft",
-      date: "November 2023"
+      name: "การอบรมเชิงปฏิบัติการ CTF BOOTCAMP",
+      image: "/images/cer3.png",
+      description: "การอบรมเชิงปฏิบัติการ CTF BOOTCAMP เพื่อพัฒนาทักษะด้านความปลอดภัยไซเบอร์ และการแนวอาชีพทางด้านการรักษาความปลอดภัยไซเบอร์",
+      issuer: "สถาบันวิชาการความมั่นคงทางไซเบอร์แห่งชาติ (THNCA)",
+      date: "พฤษภาคม 2568"
     },
     {
       id: 4,
-      name: "Full Stack Web Development",
-      image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400&h=300&fit=crop",
-      description: "Complete full-stack development certification covering front-end and back-end technologies, databases, and deployment.",
-      issuer: "freeCodeCamp",
-      date: "September 2023"
+      name: "การฝึกอบรม Azure AI Zero to Hero",
+      image: "/images/cer4.png",
+      description: "การฝึกอบรม Azure AI Zero to Hero เพื่อพัฒนาความรู้และทักษะในการใช้เทคโนโลยีปัญญาประดิษฐ์ (AI) บนแพลตฟอร์ม Microsoft Azure",
+      issuer: "มหาวิทยาลัยราชภัฏเชียงใหม่",
+      date: "กรกฎาคม 2568"
     },
     {
       id: 5,
-      name: "Google Cloud Platform",
-      image: "https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?w=400&h=300&fit=crop",
-      description: "Certification in Google Cloud Platform services, including compute, storage, networking, and machine learning APIs.",
-      issuer: "Google",
-      date: "July 2023"
+      name: "การฝึกอบรมทักษะเอไอระดับพื้นฐาน (Basic AI)",
+      image: "/images/cer5.png",
+      description: "การฝึกอบรมทักษะเอไอระดับพื้นฐาน เพื่อพัฒนาความรู้และทักษะในการใช้เทคโนโลยีปัญญาประดิษฐ์ (AI) ในด้านต่าง ๆ เช่น การวิเคราะห์ข้อมูล การใช้งาน AI ในชีวิตประจําวัน หรือการประยุกต์ใช้ AI ในงานต่าง ๆ",
+      issuer: "มหาวิทยาลัยราชภัฏเชียงใหม่",
+      date: "สิงหาคม 2568"
     },
     {
       id: 6,
-      name: "UI/UX Design Principles",
-      image: "https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?w=400&h=300&fit=crop",
-      description: "Certificate in user interface and user experience design principles, including wireframing, prototyping, and user research.",
-      issuer: "Adobe",
-      date: "May 2023"
+      name: "LINK Certified Network Cabling for Engineering",
+      image: "/images/cer6.jpg",
+      description: "ประกาศนียบัตรรับรองการเดินสายเครือข่ายสำหรับงานวิศวกรรมจากบริษัท อินเตอร์ลิงค์ คอมมิวนิเคชัน จำกัด (มหาชน)",
+      issuer: "Interlink Communication",
+      date: "กันยายน 2567"
     }
   ];
 
