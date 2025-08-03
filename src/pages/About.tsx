@@ -36,7 +36,7 @@ const About = () => {
                 <div>
                   <h2 className="text-2xl font-bold text-espresso mb-4">เผ่าพันธ์ โพธิ์ธรรม</h2>
                   <p className="text-olive leading-relaxed">
-                      ผมเป็นนักศึกษาสาขาเทคโนโลยีสารสนเทศ มีความสามารถในการพัฒนาเว็บไซต์ ด้วยใช้ TypeScript (Next.js) / PHP (Laravel)
+                      ผมเป็นนักศึกษาสาขาเทคโนโลยีสารสนเทศ มีความสามารถในการพัฒนาเว็บไซต์ด้วย TypeScript (Next.js) / PHP (Laravel)
                       สามารถพัฒนาแอปพลิเคชันด้วย Flutter และยังสามารถทำ Test Case / Test Scenario 
                       โดยมีประสบการณ์จากการเรียน การทำโครงงานการศึกษาอิสระ รวมไปถึงการอบรมเชิงปฏิบัติจากหน่วยงานภายในและภายนอกมหาวิทยาลัย
                   </p>
